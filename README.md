@@ -4,19 +4,12 @@ The Movie App is a web application built with Node.js, Express.js, EJS, and Mong
 
 ## Table of Contents
 
-- [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Routes](#routes)
 - [Middleware](#middleware)
 - [Database](#database)
-- [Frontend](#frontend)
-- [Styling](#styling)
-- [Contributing](#contributing)
-
-## Getting Started
 
 ### Prerequisites
 
@@ -36,7 +29,7 @@ Before you can run the Movie App, make sure you have the following prerequisites
 
    ```
    PORT=3000
-CONNECTION_STRING = "your-mongodb-url"
+   CONNECTION_STRING = "your-mongodb-url"
    ```
    Replace `your-mongodb-uri` with your MongoDB connection URI.
 
@@ -47,14 +40,6 @@ CONNECTION_STRING = "your-mongodb-url"
    ```
 
    The Movie App will be accessible at `http://localhost:3000` by default.
-
-## Usage
-
-- Access the Movie App in your web browser at `http://localhost:3000`.
-
-- Use the navigation menu to list movies, add new movies, edit existing movies, and delete movies.
-
-
 ## Project Structure
 
 The Movie App project structure is organized as follows:
@@ -88,13 +73,10 @@ The Movie App project structure is organized as follows:
 
 ## Middleware
 
-Middleware is used for logging requests to a log file.
+Middleware is used for logging requests to a log file and write the route, the method and the date of request
 
 ## Database
 
-The Movie App uses MongoDB for database storage. Mongoose is used as the ODM (Object-Document Mapping) library to interact with MongoDB. The database schema for movies is defined in `models/movie.js`.
+The Movie App uses MongoDB for database storage. Mongoose is used as the ODM (Object-Document Mapping) library to interact with MongoDB. The database schema for movies is defined in `shcemas/movie.js`.
 
-## Contributing
-
-Contributions are welcome! If you would like to contribute to the Movie App project, please fork the repository, make your changes, and submit a pull request.
 
