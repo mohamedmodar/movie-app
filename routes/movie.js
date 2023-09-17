@@ -8,13 +8,13 @@ const router = express.Router();
 // all endPoints:
 //|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\\
 
-//to get all films
+//to get all movies.
     router.get("/", async (req,res) =>{
     const movieList = await movieApp.find({});
     res.send(movieList);
     });
 
-// to post new items.
+// to post new moive.
     router.post("/",(req ,res) =>{
     const body = req.body;
     // to check of there is some thing really send with
@@ -32,7 +32,7 @@ const router = express.Router();
     }
 })
 
-// to update movie
+// to update specific movie.
 router.put("/:id", async (req,res) =>{
 
         const movieId = req.params.id;
@@ -54,7 +54,7 @@ router.put("/:id", async (req,res) =>{
 
 });
 
-// to delet movie
+// to delet specific movie.
 router.delete("/:id" ,async (req,res) =>{
     const movieId = req.params.id;
 
